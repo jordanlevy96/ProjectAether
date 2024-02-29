@@ -13,7 +13,7 @@
  * 
  */
 UCLASS()
-class LEGENDSOFHISTORY_API ACameraPawn : public ASpectatorPawn
+class ACameraPawn : public ASpectatorPawn
 {
 	GENERATED_BODY()
 
