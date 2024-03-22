@@ -16,7 +16,7 @@ void ACameraPawn::BeginPlay()
 	Super::BeginPlay();
 
 	// TODO: set dynamically based on player capital or something
-	SetActorLocation(FVector(2690, 21220, 3000));
+	SetActorLocation(FVector(426280.0, 718510.0, 10000));
 	SpringArm->SetRelativeRotation(FRotator(-60.f, 0.f, 0.f));
 }
 

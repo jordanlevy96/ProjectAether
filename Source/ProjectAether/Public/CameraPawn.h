@@ -13,7 +13,7 @@
  * 
  */
 UCLASS()
-class ACameraPawn : public ASpectatorPawn
+class PROJECTAETHER_API ACameraPawn : public ASpectatorPawn
 {
 	GENERATED_BODY()
 
@@ -50,31 +50,31 @@ public:
 	// Pan and Zoom Speed Settings
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Camera")
-	float MediumZoomThreshold = 500.0f;
+	float MediumZoomThreshold = 1000.0f;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Camera")
-	float HighZoomThreshold = 10000.0f;
+	float HighZoomThreshold = 100000.0f;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Camera")
-	float ClosePanSpeed = 10.0f;
+	float ClosePanSpeed = 200.0f;
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Camera")
-	float MediumPanSpeed = 50.0f;
+	float MediumPanSpeed = 400.0f;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Camera")
-	float HighPanSpeed = 500.0f;
+	float HighPanSpeed = 1600.0f;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Camera")
 	float CloseZoomSpeed = 100.0f;
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Camera")
-	float MediumZoomSpeed = 500.0f;
+	float MediumZoomSpeed = 2000.0f;
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Camera")
-	float HighZoomSpeed = 500.0f;
+	float HighZoomSpeed = 5000.0f;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Camera")
-	float MinZoom = -10000.0f;
+	float MinZoom = -1000.0f;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Camera")
 	float MaxZoom = 1000000.0f;

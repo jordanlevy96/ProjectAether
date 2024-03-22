@@ -7,7 +7,7 @@
 #include "Building.generated.h"
 
 UCLASS()
-class ABuilding : public AActor
+class PROJECTAETHER_API ABuilding : public AActor
 {
 	GENERATED_BODY()
 	

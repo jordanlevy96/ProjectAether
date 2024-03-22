@@ -8,7 +8,7 @@
  * 
  */
 UCLASS()
-class AGhostBuilding : public ABuilding
+class PROJECTAETHER_API AGhostBuilding : public ABuilding
 {
 	GENERATED_BODY()
 	
