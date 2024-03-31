@@ -65,7 +65,7 @@ public:
 	float HighPanSpeed = 1600.0f;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Camera")
-	float CloseZoomSpeed = 100.0f;
+	float CloseZoomSpeed = 500.0f;
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Camera")
 	float MediumZoomSpeed = 2000.0f;
@@ -74,7 +74,7 @@ public:
 	float HighZoomSpeed = 5000.0f;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Camera")
-	float MinZoom = -1000.0f;
+	float MinZoom = -100000.0f;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Camera")
 	float MaxZoom = 1000000.0f;

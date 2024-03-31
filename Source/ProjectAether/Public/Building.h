@@ -18,6 +18,13 @@ public:
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+	virtual void OnConstruction(const FTransform& Transform) override
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Building OnConstruction"));
+		Super::OnConstruction(Transform);
+		AlignToLandscape();
+	};
+	void AlignToLandscape();
 
 public:	
 	// Called every frame
