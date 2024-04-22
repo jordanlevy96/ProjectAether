@@ -2,27 +2,20 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "Building.generated.h"
+#include "ResourceRandomizer.generated.h"
 
 UCLASS()
-class PROJECTAETHER_API ABuilding : public AActor
+class AResourceRandomizer : public AActor
 {
 	GENERATED_BODY()
 	
 public:	
 	// Sets default values for this actor's properties
-	ABuilding();
+	AResourceRandomizer();
 
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
-	virtual void OnConstruction(const FTransform& Transform) override
-	{
-		UE_LOG(LogTemp, Warning, TEXT("Building OnConstruction"));
-		Super::OnConstruction(Transform);
-		AlignToLandscape();
-	};
-	void AlignToLandscape();
 
 public:	
 	// Called every frame

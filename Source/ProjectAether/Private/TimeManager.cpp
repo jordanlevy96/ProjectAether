@@ -3,7 +3,7 @@
 
 UTimeManager::UTimeManager()
 {
-	TimeScaleBeforePause = 1.0f; // Normal time scale
+	TimeScaleBeforePause = 1.0f;
 }
 
 void UTimeManager::PauseTime()
