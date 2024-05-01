@@ -4,6 +4,7 @@
 #include "GameFramework/Actor.h"
 #include "ResourceNode.h"
 #include "Landscape.h"
+#include "PCGVolume.h"
 #include "ResourceRandomizer.generated.h"
 
 UCLASS()
@@ -24,6 +25,9 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PCG")
+	APCGVolume* PCGVolume;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Resource Classes")
 	TSubclassOf<AResourceNode> ClayResourceClass;
