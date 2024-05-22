@@ -1,5 +1,5 @@
-#include "CoreMinimal.h"
 #include "UI/TooltipComponent.h"
+#include "CoreMinimal.h"
 
 UTooltipComponent::UTooltipComponent()
 {
